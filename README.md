@@ -17,7 +17,7 @@ var gl = require('webgl-context')();
 //or with optional settings...
 var gl = require('webgl-context')({
 	canvas: canvas, //the canvas DOM element to use
-	attribs: { failIfMajorPerformanceCaveat: true } //custom attributes
+	attributes: { failIfMajorPerformanceCaveat: true } //custom attributes
 });
 ```
 

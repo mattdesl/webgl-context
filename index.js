@@ -6,7 +6,7 @@ module.exports = function(opts) {
     if (typeof opts.height === "number")
         canvas.height = opts.height;
     
-    var attribs = opts.attribs || {};
+    var attribs = (opts.attributes || opts.attribs || {});
     try {
         gl = (canvas.getContext('webgl', attribs) || canvas.getContext('experimental-webgl', attribs));
     } catch (e) {
