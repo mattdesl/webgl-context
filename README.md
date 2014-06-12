@@ -1,5 +1,3 @@
-[![browser support](https://ci.testling.com/mattdesl/webgl-context.png)](https://ci.testling.com/mattdesl/webgl-context)
-
 # webgl-context
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
