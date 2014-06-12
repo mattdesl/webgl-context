@@ -13,10 +13,14 @@ Gets a WebGLRenderingContext.
 ```
 //get a GL context, will be null if not found
 var gl = require('webgl-context')();
+```
 
+```
 //or with optional settings...
 var gl = require('webgl-context')({
 	canvas: canvas, //the canvas DOM element to use
+	width: 400, //resizes the canvas..
+	height: 200, 
 	attributes: { failIfMajorPerformanceCaveat: true } //custom attributes
 });
 ```
