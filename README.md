@@ -4,7 +4,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Gets a WebGLRenderingContext.
+Grabs a WebGLRenderingContext and will return null if it doesn't exist.
 
 ## Usage
 
