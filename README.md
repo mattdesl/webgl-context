@@ -10,12 +10,12 @@ Gets a WebGLRenderingContext.
 
 [![NPM](https://nodei.co/npm/webgl-context.png)](https://nodei.co/npm/webgl-context/)
 
-```
+```js
 //get a GL context, will be null if not found
 var gl = require('webgl-context')();
 ```
 
-```
+```js
 //or with optional settings...
 var gl = require('webgl-context')({
 	canvas: canvas, //the canvas DOM element to use
