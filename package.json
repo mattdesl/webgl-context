@@ -7,10 +7,13 @@
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "dependencies": {},
   "devDependencies": {
-    "tape": "~2.13.2"
+    "browserify": "^8.0.2",
+    "faucet": "0.0.1",
+    "tape": "^3.0.3",
+    "testling": "^1.7.1"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "browserify test.js | testling -x open"
   },
   "testling": {
     "files": "test.js",
