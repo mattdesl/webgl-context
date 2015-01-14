@@ -9,11 +9,13 @@
   "devDependencies": {
     "browserify": "^8.0.2",
     "faucet": "0.0.1",
-    "tape": "^3.0.3",
-    "testling": "^1.7.1"
+    "smokestack": "^3.1.0",
+    "tap-closer": "^1.0.0",
+    "tape": "^3.0.3"
   },
   "scripts": {
-    "test": "browserify test.js | testling -x open"
+    "test": "browserify test.js | tap-closer | smokestack | faucet",
+    "test-node": "node test-node.js | faucet"
   },
   "testling": {
     "files": "test.js",

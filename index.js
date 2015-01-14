@@ -1,4 +1,6 @@
 module.exports = function(opts) {
+    if (typeof document === 'undefined')
+        return null //for terminal
     opts = opts||{}
     var canvas = opts.canvas || document.createElement("canvas")
     if (typeof opts.width === "number")
