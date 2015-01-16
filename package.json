@@ -14,8 +14,9 @@
     "tape": "^3.0.3"
   },
   "scripts": {
-    "test": "browserify test.js | tap-closer | smokestack | faucet",
-    "test-node": "node test-node.js | faucet"
+    "test": "npm run test-browser && npm run test-node",
+    "test-browser": "browserify test/test.js | tap-closer | smokestack | faucet",
+    "test-node": "node test/test-node.js | faucet"
   },
   "testling": {
     "files": "test.js",

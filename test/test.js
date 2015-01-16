@@ -1,5 +1,5 @@
 var test = require('tape').test
-var create = require('./')
+var create = require('../')
 
 test('should get webgl context', function(t) {
     if (typeof document === "undefined")
