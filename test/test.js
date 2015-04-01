@@ -10,7 +10,7 @@ test('should get webgl context', function(t) {
     var gl = create()
     t.ok(gl instanceof WebGLRenderingContext, 'WebGL context returned')
     t.equal(create({ canvas: {} }), null, 'returns null on fail')
-	t.end()
+    t.end()
 })
 
 

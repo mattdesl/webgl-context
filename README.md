@@ -9,7 +9,8 @@ Grabs a WebGLRenderingContext, returning null if it doesn't exist. Similar to [2
 var gl = require('webgl-context')()
 
 if (gl) {
-    //.. do something
+    document.body.appendChild(gl.canvas)
+    //do something...
 }
 ```
 
