@@ -1,6 +1,6 @@
 {
   "name": "webgl-context",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "gets a WebGLRenderingContext",
   "main": "index.js",
   "license": "MIT",
