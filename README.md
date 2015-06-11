@@ -41,6 +41,11 @@ Gets a new canvas context with optional parameters:
 
 You can then get a reference of the canvas element with `ctx.canvas`. 
 
+## See Also
+
+- [get-canvas-context](https://www.npmjs.com/package/get-canvas-context)
+- [2d-context](https://www.npmjs.com/package/2d-context)
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/webgl-context/blob/master/LICENSE.md) for details.

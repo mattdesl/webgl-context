@@ -5,17 +5,18 @@
   "main": "index.js",
   "license": "MIT",
   "author": "Matt DesLauriers <dave.des@gmail.com>",
-  "dependencies": {},
+  "dependencies": {
+    "get-canvas-context": "^1.0.1"
+  },
   "devDependencies": {
     "browserify": "^8.0.2",
     "faucet": "0.0.1",
     "smokestack": "^3.1.0",
-    "tap-closer": "^1.0.0",
     "tape": "^3.0.3"
   },
   "scripts": {
     "test": "npm run test-browser && npm run test-node",
-    "test-browser": "browserify test/test.js | tap-closer | smokestack | faucet",
+    "test-browser": "browserify test/test.js | smokestack | faucet",
     "test-node": "node test/test-node.js | faucet"
   },
   "testling": {
