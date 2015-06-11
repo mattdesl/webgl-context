@@ -22,3 +22,12 @@ test("creates a canvas with a webgl context", function(t) {
     t.equal(canvas.height, 128, 'sets height')
     t.end()
 })
+
+test("closes", function(t) {
+    if (window.close) {
+        setTimeout(function() {
+            window.close()
+        }, 500)
+    }
+    t.end()
+})
